@@ -31,7 +31,7 @@ bin/
 .DS_Store
 
 ### Android Studio ###
-*.iml
+## *.iml
 .gradle
 /local.properties
 /.idea/caches
