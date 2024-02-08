@@ -9,7 +9,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:3000")
+// CORS : 서로 다른 출처를 가지고 있는 상태에서 리소스를 요청하게 되면 브라우저에서 보안상의 이유로 리소스를 차단함
+// @CrossOrigin : CORS 오류 발생 시 외부 서버의 접속을 허용하는 어노테이션
+// WebMvcConfigurer를 상속받아 addCorsMappings 메소드를 구현하여 CORS 허용 가능
+
+//@CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
 @RestController
 public class BoardApiController {
