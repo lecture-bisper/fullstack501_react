@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import data from "bootstrap/js/src/dom/data";
+import {Link} from "react-router-dom";
 
 function SelectBoardList(props) {
   const [boardList, setBoardList] = useState([]);
@@ -46,7 +46,7 @@ function SelectBoardList(props) {
         </tbody>
       </table>
       <div className={'my-3 d-flex justify-content-end'}>
-        <a href={'#'} className={'btn btn-primary'}>글쓰기</a>
+        <Link to={'/write'} className={'btn btn-primary'}>글쓰기</Link>
       </div>
     </div>
   );
